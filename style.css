@@ -134,3 +134,29 @@
 p {
   line-height: 30px;
 }
+
+/*project*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+ .project-text {
+  text-align: center;
+  margin: 100px 0px 60px 0px;
+}
+
+
