@@ -1,77 +1,136 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* header */
 .header {
-    background-image: url('img/banu.jpg');   
-    background-size: cover;
-    background-position: center;
-    height: 713px;
-    color: #fff;
-    position: relative;
+  background-image: url('img/banu.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 713px;
+  color: #fff;
+  position: relative;
 }
 
 .header * {
-    z-index: 5; /*yazılar saydam tabakanın üzerine gelir.*/
+  z-index: 5;
+  /*yazılar saydam tabakanın üzerine gelir.*/
 }
 
 .header::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6) /*resim üzerindeki saydam tabaka*/
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6)
+    /*resim üzerindeki saydam tabaka*/
 }
 
 .header .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
 }
 
 .header .content h1 {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .header .content p {
-    font-size: 30px;
-    margin: 20px 0;
+  font-size: 30px;
+  margin: 20px 0;
+  color: #fff;
 }
 
 /*navbar*/
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    width: 100%;
-    height: 70px;  
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 75%);
+  position: fixed;
+  width: 100%;
+  height: 70px;
 }
 
-.navbar a{
-    color: white;
-    text-decoration: none; /*link altındaki çizgiyi siler*/  
+.navbar a {
+  color: white;
+  text-decoration: none;
+  /*link altındaki çizgiyi siler*/
 }
 
-.navbar a:hover{ 
-    border-bottom: 2px solid red;
+.navbar a:hover {
+  border-bottom: 2px solid white;
 }
 
-.navbar__logo{
-    margin: 0 20px;
+.navbar__logo {
+  margin: 0 20px;
 }
 
-.navbar li{
-    padding: 0 20px;
-    font-size: 17px;
-    list-style-type: none;/*listedeki iaşretler kalktı*/
-    display: inline-block; /*linkleri kendi için yan yana koydu*/
+.navbar li {
+  padding: 0 20px;
+  font-size: 17px;
+  list-style-type: none;
+  /*listedeki iaşretler kalktı*/
+  display: inline-block;
+  /*linkleri kendi için yan yana koydu*/
 }
 
+/*about*/
+.about .about-title {
+  text-align: center;
+  margin: 100px 0px 50px 0px;
+  line-height: 50px;
+}
 
+.about-item {
+  display: flex;
+  justify-content: center;
+}
+
+.about-item .box {
+  width: 300px;
+  height: 385px;
+  margin: 10px 10px 100px 10px;
+}
+
+.box-text h4 {
+  text-align: center;
+}
+
+.box-text p {
+  margin: 15px;
+  line-height: 30px;
+}
+
+.about-item .box img {
+  width: 200px;
+  height: 200px;
+  padding-left: 60px;
+}
+
+.about-image img {
+  width: 400px;
+  height: 400px;
+  margin: 60px 50px 0px 50px;
+  border-radius: 10px;
+}
+
+.about-detail {
+  display: flex;
+  height: 500px;
+  background: #80808021;
+}
+
+.about-detail-text {
+  padding: 180px 120px 0px 50px;
+}
+
+.about-detail-text h1,
+p {
+  line-height: 30px;
+}
