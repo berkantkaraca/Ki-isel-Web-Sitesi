@@ -14,8 +14,7 @@
 }
 
 .header * {
-  z-index: 5;
-  /*yazılar saydam tabakanın üzerine gelir.*/
+  z-index: 5;  /*yazılar saydam tabakanın üzerine gelir.*/
 }
 
 .header::before {
@@ -23,8 +22,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6)
-    /*resim üzerindeki saydam tabaka*/
+  background: rgba(0, 0, 0, 0.6)    /*resim üzerindeki saydam tabaka*/
 }
 
 .header .content {
@@ -59,8 +57,7 @@
 
 .navbar a {
   color: white;
-  text-decoration: none;
-  /*link altındaki çizgiyi siler*/
+  text-decoration: none;  /*link altındaki çizgiyi siler*/
 }
 
 .navbar a:hover {
@@ -74,10 +71,8 @@
 .navbar li {
   padding: 0 20px;
   font-size: 17px;
-  list-style-type: none;
-  /*listedeki iaşretler kalktı*/
-  display: inline-block;
-  /*linkleri kendi için yan yana koydu*/
+  list-style-type: none;  /*listedeki iaşretler kalktı*/
+  display: inline-block;  /*linkleri kendi için yan yana koydu*/
 }
 
 /*about*/
@@ -159,4 +154,71 @@ p {
   margin: 100px 0px 60px 0px;
 }
 
+/*skill*/
+.skill {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  margin-bottom: 100px;
+  background: #80808021;
+}
 
+.skill .skill-text {
+  padding: 130px 260px;
+}
+
+.bar .item1 {
+  width: 630px;
+  height: 30px;
+  background: #918f8f4b;
+}
+
+.bar .item1 p {
+  width: 441px;
+  height: 30px;
+  text-align: center;
+  background: gray;
+}
+
+.bar .item2 {
+  width: 630px;
+  height: 30px;
+  background: #918f8f4b;
+}
+
+.bar .item2 p {
+  width: 504px;
+  height: 30px;
+  text-align: center;
+  background: gray;
+}
+
+.bar .item3 {
+  width: 630px;
+  height: 30px;
+  background: #918f8f4b;
+}
+
+.bar .item3 p {
+  width: 567px;
+  height: 30px;
+  text-align: center;
+  background: gray;
+}
+
+.bar .item4 {
+  width: 630px;
+  height: 30px;
+  background: #918f8f4b;
+}
+
+.bar .item4 p {
+  width: 472.5px;
+  height: 30px;
+  text-align: center;
+  background: gray;
+}
+
+h4 {
+  margin: 15px 0px 15px 15px;
+}
