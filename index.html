@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="website icon" type="png" href="img/logo_tr.png"> <!-- title icon -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- footerdaki iconlar için -->
+    
     <script src="script.js"></script>
 </head>
 
@@ -227,9 +228,16 @@
     </main>
 
     <footer>
+        <div class="social">
+            <a href="https://github.com/berkantkaraca"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/bkaraca71"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:berkantkaraca@ogr.bandirma.edu.tr"><i class="far fa-envelope"></i></a>
+        </div>
+          
         <a href="https://www.github.com/berkantkaraca" target="_blank">Created by Berkant Karaca</a>
     </footer>
     
+    <!-- CV indirmek için yazılan script -->
     <script>
         document.getElementById('cvLink').addEventListener('click', function() {
             var link = document.createElement('a');

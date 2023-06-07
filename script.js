@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', function() {
     popUp.style.zIndex = '9999';
 
     var textElement = document.createElement('p');
-    textElement.innerHTML = 'Hoşgeldiniz! Bu sayfada benimle alakalı bilgilere erişebilirisiniz.';
+    textElement.innerHTML = 'Hoşgeldiniz! </br> Bu sayfada benimle alakalı genel bilgilere ulaşabilirsiniz. Bana ulaşmak için sayfanın en altında sosyal medya hesaplarımı bulabilirsiniz.';
     popUp.appendChild(textElement);
 
     var closeBtn = document.createElement('button');
@@ -42,4 +42,3 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }, kapanmaSuresi);
 });
-

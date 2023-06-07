@@ -277,3 +277,13 @@ footer, a {
   color: #ffffff;
 
 }
+
+/*social*/
+.social{
+  display: flex;
+  padding: 20px;
+}
+
+.social a{
+  padding: 20px;
+}
