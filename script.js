@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function() {
     popUp.appendChild(closeBtn);
     document.body.appendChild(popUp);
 
-    var kapanmaSuresi = 5000; // 5 saniye sonra kapanır(ms)
+    var kapanmaSuresi = 5000; // 5 saniye sonra popup kapanır(ms)
 
     setTimeout(function() {
         if (popUp.parentNode) {

@@ -206,13 +206,21 @@
             </div>
         </div>
         
-        <!--contact-->
-        <div class="contact" id="contact">
+        <!-- contact -->
+        <div class="contact" id="contact"> 
+            
             <div class="contact-text">
                 <h1>İletişime Geç</h1>
                 <h2>Mesaj gönderebilirsiniz</h2>
             </div>
-            <div class="contact-detail">               
+
+            <div class="contact-detail"> 
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3625.811210805803!2d28.786427087341494!3d41.129739110875505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDA3JzQ4LjgiTiAyOMKwNDcnMjAuNCJF!5e0!3m2!1str!2str!4v1686209458091!5m2!1str!2str" 
+                        width="500" height="400" >
+                    </iframe>
+                </div>
                 <div class="contact-form">
                     <input type="text" placeholder="Adınız">
                     <br>
@@ -221,7 +229,7 @@
                     <input type="text" placeholder="Konu">
                     <br>
                     <textarea cols="83" rows="10" placeholder="Mesajınızı buraya yazınız"></textarea>
-                    <button>Gönder</button>
+                    <button id="ilet" style="cursor: pointer;">Gönder</button>
                 </div>
             </div>
         </div>
@@ -237,13 +245,18 @@
         <a href="https://www.github.com/berkantkaraca" target="_blank">Created by Berkant Karaca</a>
     </footer>
     
-    <!-- CV indirmek için yazılan script -->
     <script>
+        //CV indirmek için yazılan script
         document.getElementById('cvLink').addEventListener('click', function() {
             var link = document.createElement('a');
             link.href = 'CV.pdf';
             link.download = 'CV.pdf';
             link.click();
+        });
+
+        //İletişime geç kısmındaki gönder butonu mesajı
+        document.getElementById("ilet").addEventListener("click", function() { 
+            alert("Gönder butonuna bastınız. Backend kodları yakında yazılacak :) "); 
         });
     </script>
     
